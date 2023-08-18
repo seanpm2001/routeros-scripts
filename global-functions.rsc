@@ -50,7 +50,6 @@
 :global ParseKeyValueStore;
 :global PrettyPrint;
 :global RandomDelay;
-:global Read;
 :global RequiredRouterOS;
 :global ScriptFromTerminal;
 :global ScriptInstallUpdate;
@@ -701,11 +700,6 @@
   :global GetRandomNumber;
 
   :delay ([ $GetRandomNumber $1 ] . [ $EitherOr $2 "s" ]);
-}
-
-# read input from user
-:set Read do={
-  :return;
 }
 
 # check for required RouterOS version
